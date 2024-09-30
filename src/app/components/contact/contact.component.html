@@ -1,0 +1,42 @@
+<div class="contact-container">
+    <div class="content">
+      <div class="text-content">
+        <h1>¡Contáctanos!</h1>
+        <p>Siempre estamos a la expectativa de recibir nuevos proyectos, así que no dudes en contarnos tus ideas.</p>
+      </div>
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+        <mat-form-field appearance="fill">
+          <mat-label>Nombre</mat-label>
+          <input matInput formControlName="nombre">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>País</mat-label>
+          <input matInput formControlName="pais">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Ciudad</mat-label>
+          <input matInput formControlName="ciudad">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Celular</mat-label>
+          <input matInput formControlName="celular">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Correo corporativo</mat-label>
+          <input matInput formControlName="correo" type="email">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Empresa</mat-label>
+          <input matInput formControlName="empresa">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Servicio que solicita</mat-label>
+          <input matInput formControlName="servicio">
+        </mat-form-field>
+      </form>
+    </div>
+    <div class="image-container">
+      <img src="/assets/contact-image.png" alt="" class="contact-image">
+    </div>
+  </div>
+  
